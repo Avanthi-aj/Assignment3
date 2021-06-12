@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 10px;
+}
+
+header{
+    background: url("Strawberry.jpg") no-repeat center 100%;
+    background-size: cover;
+    opacity: 0.9;
+    border: white 10px solid;
+    height: 100vh;
+    width: 100%;
+    clip-path: circle(410vh at 50% -310vh);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-transform: uppercase;
+}
+
+
+
+.header1{
+    color: white;
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 20px;
+    animation: head1 0.5s ease;
+    position: relative;
+}
+
+.header2{
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 15px;
+    animation: head2 0.5s ease;
+    position: relative;
+}
+
+button{
+    margin-top: 40px;
+    text-transform: capitalize;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 100px;
+    border: white;
+    color: #414040;
+    position: relative;
+    animation: btn 1s ease;
+    transition: all 0.5s ease;
+}
+button:hover{
+    cursor: pointer;
+}
+
+@keyframes head1 {
+    0% {
+        transform: translateY(-50px);
+}
+    100% {
+        transform: translateY(0);
+}
+}
+
+@keyframes head2 {
+
+    0% {
+        transform: translateY(50px);
+}
+    100% {
+        transform: translateY(0);
+}
+}
+
+@keyframes btn {
+0% {
+    opacity: 0;
+    transform: translatex(-100px);
+}
+
+100% {
+    opacity: 1;
+    transform: translatex(0);
+}
+}
